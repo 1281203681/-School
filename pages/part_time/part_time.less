@@ -1,0 +1,93 @@
+page {
+    background-color: rgb(238, 237, 237);
+}
+
+.all_wrpa {
+    .item_wrap {
+        // padddi
+        // padding: 24rpx;
+        background-color: white;
+        display         : flex;
+        flex-direction  : column;
+        margin-bottom   : 12rpx;
+
+        .top_wrap {
+            display            : flex;
+            flex-direction     : row;
+            // background-color: red;
+            padding            : 24rpx;
+
+            .name {
+                font-weight: 600;
+                max-width    : 300rpx;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                white-space  : nowrap;
+            }
+
+            .money {
+                // background-color: red;
+                // float: right;
+                margin-left: 30%;
+                color      : red;
+
+            }
+        }
+
+        .tip_wrpa {
+            display       : flex;
+            flex-direction: row;
+            font-size     : 32rpx;
+
+            .item_tip {
+                // background-color: red;
+                border-radius   : 10rpx;
+                margin-left     : 24rpx;
+                padding         : 5rpx;
+                text-align      : center;
+                background-color: rgb(228, 228, 228);
+                color           : rgb(160, 160, 160);
+            }
+        }
+
+        .boss_wrap {
+            display       : flex;
+            flex-direction: row;
+            padding       : 24rpx;
+
+            image {
+                height             : 60rpx;
+                width              : 60rpx;
+                border-radius      : 50%;
+                // background-color: red;
+                // flex: 1;
+            }
+
+            .boss_name {
+                // background-color: sienna;
+                font-size  : 28rpx;
+                // height: auto;
+                margin-left: 24rpx;
+                max-width    : 140rpx;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                white-space  : nowrap;
+                
+                // flex: 1;
+
+            }
+
+            .add {
+                // background-color: red;
+                // margin-left  : 39%;
+                margin-left: 180rpx;
+                max-width    : 240rpx;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                white-space  : nowrap;
+                font-size: 34rpx;
+            }
+        }
+    }
+
+}

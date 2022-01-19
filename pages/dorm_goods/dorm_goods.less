@@ -1,0 +1,142 @@
+.all_wrap {
+    display       : flex;
+    flex-direction: row;
+
+    .left_wrap {
+        text-align      : center;
+        display         : flex;
+        flex-direction  : column;
+        flex            : 1;
+        // border-right: 1rpx solid black;
+
+        .item_list {
+            padding-bottom: 12rpx;
+        }
+        .add_tip{
+            text-align: center;
+            // margin-top: 12rpx;
+            padding: 24rpx;
+            font-size: 42rpx;
+            background-color: rgb(236, 236, 236);
+        }
+    }
+
+    .right_wrap {
+        display         : flex;
+        flex-direction  : column;
+        flex            : 3;
+
+        .item_wrap {
+            display       : flex;
+            flex-direction: row;
+            margin-bottom: 12rpx;
+            border-bottom: 1rpx solid rgb(226, 226, 226);
+
+            .img {
+                image {
+                    height: 100rpx;
+                    width : 100rpx;
+                }
+            }
+
+            .mess_wrap {
+                display       : flex;
+                flex-direction: column;
+                // background-color: sandybrown;
+                width: 180rpx;
+
+                .goods_name {
+                    max-width    : 200rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                }
+
+                .price {
+                    // columns: ;
+                    color: red;
+                    max-width    : 150rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                }
+            }
+
+            .tip_wrap {
+                display: flex;
+                flex-direction: column;
+                // margin-left: 120rpx;
+                // margin-right: 0rpx;
+                // background-color: salmon;
+                padding-left: 100rpx;
+                margin-bottom: 6rpx;
+                .tip_1 {
+                    // padding-bottom: 12rpx;
+                    padding: 4rpx;
+                    border: 1rpx solid blue;
+                    background-color: blue;
+                    margin-bottom: 3rpx;
+                    color: white;
+                    border-radius: 12rpx;
+                }
+                .tip_2{
+                    color: white;
+                    margin-top: 3rpx;
+                    padding: 4rpx;
+                    border: 1rpx solid red;
+                    background-color: red;
+                    border-radius: 12rpx;
+                }
+            }
+        }
+        .add_tip{
+            text-align: center;
+            font-size: 52rpx;
+            border-bottom: 1rpx solid rgb(226, 226, 226);
+            padding: 24rpx;
+            background-color: rgb(236, 236, 236);
+        }
+    }
+}
+.tip_all_wrap{
+    .top_content{
+        display: flex;
+        flex-direction: row;
+        padding: 24rpx;
+        .img{
+            image{
+                height: 120rpx;
+                width: 120rpx;
+            }
+        }
+        .input_wrap{
+            display: flex;
+            flex-direction: column;
+            // padding-left: 24rpx;
+            padding: 24rpx;
+            // flex-direction: column;
+            .list{
+                display: flex;
+                flex-direction: row;
+                .title{
+                    // background-color: rebeccapurple;
+                    width: 200rpx;
+                    // display: flex;
+                    // flex-direction: row;
+                }
+                input{
+                    // background-color: red;
+                    float: right;
+                    width: 300rpx;
+                }
+            }
+        }
+        
+    }
+    .bt_wrap{
+        display: flex;
+        flex-direction: row;
+        padding: 24rpx;
+        button{}
+    }
+}

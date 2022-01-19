@@ -1,0 +1,173 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "个人中心",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "校园树洞",
+          "pathName": "pages/school/school",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "用户信息",
+          "pathName": "pages/user_info/user_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "修改信息",
+          "pathName": "pages/school_info/school_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布传话",
+          "pathName": "pages/send/send",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "配送地址",
+          "pathName": "pages/school_info/school_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "信息详情",
+          "pathName": "pages/school_detail/school_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的发布详情",
+          "pathName": "pages/my_send/my_send",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "写评论",
+          "pathName": "pages/school_write/school_write",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "校园购物",
+          "pathName": "pages/school_buy/school_buy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "付款",
+          "pathName": "pages/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "二手市场",
+          "pathName": "/pages/second_buy/second_buy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "用户通知",
+          "pathName": "pages/user_notic/user_notic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "兼职",
+          "pathName": "pages/part_time/part_time",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "店铺管理",
+          "pathName": "pages/shop_mani/shop_mani",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "宿舍小卖铺",
+          "pathName": "pages/dorm_shop/dorm_shop",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "店铺管理",
+          "pathName": "pages/dorm_shop_mani/dorm_shop_mani",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品管理",
+          "pathName": "pages/dorm_goods/dorm_goods",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "宿舍小卖铺商品列表",
+          "pathName": "pages/dorm_goods_list/dorm_goods_list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "驾校",
+          "pathName": "pages/cart_school/cart_school",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "老板管理",
+          "pathName": "pages/boss_mani/boss_mani",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "兼职详情",
+          "pathName": "pages/part_time_detail/part_time_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "用户订单",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "钱包",
+          "pathName": "pages/wallet/wallet",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

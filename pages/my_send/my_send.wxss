@@ -1,0 +1,35 @@
+page {
+  background-color: #f0f0f0;
+}
+.all_wrap .item_wrap {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 24rpx;
+}
+.all_wrap .item_wrap .left_wrap {
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+}
+.all_wrap .item_wrap .left_wrap image {
+  height: 260rpx;
+  width: 260rpx;
+  margin: 12rpx;
+  flex: 2;
+}
+.all_wrap .item_wrap .left_wrap .content {
+  flex: 3;
+  padding: 12rpx;
+  font-size: 34rpx;
+}
+.all_wrap .item_wrap .right_wrap {
+  flex: 1;
+  height: 80rpx;
+}
+.all_wrap .item_wrap .right_wrap .del_tip {
+  text-align: center;
+  padding: 12rpx;
+  color: royalblue;
+  font-size: 33rpx;
+}

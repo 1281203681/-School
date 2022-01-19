@@ -1,0 +1,14 @@
+.all_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.all_wrap .input {
+  padding: 24rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+.all_wrap .send {
+  padding: 24rpx;
+  border: 1rpx solid #e2e2e2;
+  border-radius: 24rpx;
+  text-align: center;
+}

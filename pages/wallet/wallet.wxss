@@ -1,0 +1,54 @@
+.all_wrap .money_wrap {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #e570e7 0%, #79f1fc 100%);
+  cursor: pointer;
+  font-size: 42rpx;
+}
+.all_wrap .money_wrap .name {
+  width: 50%;
+  padding-top: 48rpx;
+  padding-bottom: 48rpx;
+  border-right: 1rpx solid white;
+}
+.all_wrap .money_wrap .money_num {
+  width: 50%;
+  padding-top: 48rpx;
+  padding-bottom: 48rpx;
+}
+.all_wrap .cash_out {
+  text-align: center;
+  color: yellowgreen;
+  margin-top: 24rpx;
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+  border: 1rpx solid yellowgreen;
+  margin-left: 48rpx;
+  margin-right: 48rpx;
+}
+.all_wrap .water_wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx;
+}
+.all_wrap .water_wrap .title {
+  text-align: center;
+}
+.all_wrap .water_wrap .list_item_wrap {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12rpx;
+}
+.all_wrap .water_wrap .list_item_wrap .money {
+  width: 20%;
+}
+.all_wrap .water_wrap .list_item_wrap .time {
+  text-align: center;
+  width: 40%;
+}
+.all_wrap .water_wrap .list_item_wrap .statue {
+  text-align: center;
+  width: 40%;
+}

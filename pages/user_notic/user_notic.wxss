@@ -1,0 +1,52 @@
+.all_wrap .notic_list {
+  display: flex;
+  flex-direction: row;
+}
+.all_wrap .notic_list image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.all_wrap .notic_list .content_wrap {
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .notic_list .content_wrap .name {
+  font-weight: 600;
+}
+.all_wrap .notic_list .content_wrap .content {
+  margin-top: 24rpx;
+  color: #ada8a8;
+  max-width: 380rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tip_wrap .title {
+  font-weight: 600;
+  text-align: center;
+}
+.tip_wrap .name {
+  text-align: center;
+  font-size: 33rpx;
+  padding-top: 12rpx;
+}
+.tip_wrap .content {
+  padding-top: 24rpx;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+}
+.tip_wrap .end_wrap {
+  display: flex;
+  flex-direction: row;
+  padding-top: 24rpx;
+  font-size: 32rpx;
+  color: #868686;
+  padding-left: 12rpx;
+}
+.tip_wrap .end_wrap .send_name {
+  margin-left: 24rpx;
+}
+.tip_wrap .end_wrap .scan_num {
+  margin-left: 24rpx;
+}

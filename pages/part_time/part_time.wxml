@@ -1,0 +1,16 @@
+<view class="all_wrpa">
+    <navigator class="item_wrap" wx:for="{{part_timeObj}}" bind:tap="gotoPartTimeDetail" data-item="{{item}}">
+        <view class="top_wrap">
+            <view class="name">{{item.title}}</view>
+            <view class="money">{{item.price}}元/天</view>
+        </view>
+        <view class="tip_wrpa" >
+            <view class="item_tip" wx:for="{{item.tip}}" wx:for-item="item1" wx:for-index="index1">{{item1}}</view>
+        </view>
+        <view class="boss_wrap">
+            <image src="{{item.fileID}}" />
+            <view class="boss_name">{{item.sendName}}</view>
+            <view class="add">地点：{{item.add}}</view>
+        </view>
+    </navigator>
+</view>

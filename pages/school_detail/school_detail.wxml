@@ -1,0 +1,46 @@
+<view class="all_wrap">
+    <!-- 发表者信息 -->
+    <view class="user_info_wrap" wx:if="{{detailObj.statue==false}}">
+        <image src="{{detailObj.userImg}}" class="img" />
+        <view class="info_wrap">
+            <view class="user_name">{{detailObj.userName}}</view>
+            <view class="user_school">{{detailObj.userSchool}}</view>
+        </view>
+    </view>
+    <!-- 匿名发布发布者信息 -->
+    <view class="user_info_wrap" wx:if="{{detailObj.statue==true}}">
+        <image src="https://z3.ax1x.com/2021/04/24/cvsmuQ.png" class="img" />
+        <view class="info_wrap">
+            <view class="user_name">匿名</view>
+            <view class="user_school">匿名</view>
+        </view>
+    </view>
+    <!-- 信息详情 -->
+    <view class="mes_wrap">
+        <view class="mes_content">{{detailObj.content}}</view>
+        <view class="mes_img" wx:if="{{detailObj.imgId}}">
+            <image class="mes_img" src="{{detailObj.imgId}}" mode="widthFix" />
+        </view>
+        <view class="mes_img" wx:else>
+            <image class="mes_img" src="{{detailObj.imgId}}" mode="widthFix" style="height:0;width:0" />
+        </view>
+    </view>
+    <!-- 点赞评论转发 -->
+    <view class="play_wrap" bind:tap="share">
+        <button class="share" open-type="share">分享</button>
+        <button class="buy" type="primary" hidden="{{hid}}" bind:tap="gotoPay">￥{{detailObj.price}}购买</button>
+    </view>
+    <!-- 发表评论 -->
+    <view class="writ_detail_wrap">
+        <image src="https://z3.ax1x.com/2021/04/24/cvsmuQ.png" />
+        <input class="writ_content" placeholder="发表评论(匿名)" bind:input="handleInput"></input>
+        <text class="send" bind:tap="sendMess">发送</text>
+        <!-- <button style="mini">发送</button> -->
+    </view>
+    <!-- 评论详情 -->
+    <view class="write_content_wrap" wx:if="{{userWriteObj}}" wx:for="{{userWriteObj}}" wx:for-index="index" wx:for-item="item">
+        <image src="https://z3.ax1x.com/2021/08/09/fGEwAH.png" />
+        <view class="content">{{item.writContent}}</view>
+    </view>
+    <view class="no_send">---没有评论更多啦---</view>
+</view>

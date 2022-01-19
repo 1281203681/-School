@@ -1,0 +1,42 @@
+<view class="all_wrap">
+    <view class="title">发布兼职信息</view>
+    <view class="list_wrap">
+        <view class="list" bind:tap="uploadImg">上传头像</view>
+        <view class="list">
+            发布者名字
+            <input placeholder="名字" bind:input="sendName"/>
+        </view>
+        <view class="list">
+            题目
+            <input placeholder="题目" bind:input="title"/>
+        </view>
+        <view class="list">
+            介绍
+            <input placeholder="介绍" bind:input="detail"/>
+        </view>
+        <view class="list">
+            价格
+            <input placeholder="价格" type="digit" bind:input="price"/>
+        </view>
+        <view class="list">
+            标签
+            <input placeholder="用英文逗号隔开" bind:input="tip"/>
+        </view>
+        <view class="list">
+            地址
+            <input placeholder="工作地址" bind:input="add"/>
+        </view>
+        <button type="primary" bind:tap="sendPart">确定发布</button>
+    </view>
+    <view class="title">发布驾校信息</view>
+    <view class="list_wrap_1">
+        <view class="list_1" bind:tap="uploadImg_1">上传图标</view>
+        <view class="list_1">发布者名字<input placeholder="名字" bind:input="sendName_1"/></view>
+        <view class="list_1">标题<input placeholder="标题" bind:input="title_1"/></view>
+        <view class="list_1">介绍<input placeholder="介绍" bind:input="detail_1"/></view>
+        <view class="list_1">价格<input placeholder="价格" bind:input="price_1"/></view>
+        <view class="list_1">地点<input placeholder="地点" bind:input="add_1"/></view>
+        <view class="list_1">说明<input placeholder="逗号隔开" bind:input="list_1"/></view>
+        <button type="primary" bind:tap="sendCar">确定发布</button>
+    </view>
+</view>

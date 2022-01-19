@@ -1,0 +1,67 @@
+page {
+    background-color: rgb(245, 245, 245);
+}
+
+.all_wrap {
+    .item_wrap {
+        display         : flex;
+        flex-direction  : row;
+        padding         : 12rpx;
+        background-color: white;
+        margin-bottom   : 12rpx;
+
+        .img_wrap {
+            display       : flex;
+            flex-direction: column;
+
+            .goods_img {
+                width : 180rpx;
+                height: 180rpx;
+            }
+
+            .user_wrap {
+                display       : flex;
+                flex-direction: row;
+                padding-top: 12rpx;
+                .user_img {
+                    width : 40rpx;
+                    height: 40rpx;
+                    border-radius: 50%;
+                }
+
+                .user_name {
+                    font-size    : 18rpx;
+                    text-align   : center;
+                    max-width    : 80rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                }
+            }
+
+        }
+
+        .contene_wrap {
+            display        : flex;
+            flex-direction : column;
+            justify-content: space-around;
+
+            .content {
+                padding      : 24rpx;
+                max-width    : 60%;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+                white-space  : nowrap;
+            }
+
+            .price {
+                color              : red;
+                // background-color: rosybrown;
+                margin-top         : 12rpx;
+            }
+        }
+    }
+}
+.tip{
+    text-align: center;
+}

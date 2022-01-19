@@ -1,0 +1,64 @@
+page {
+  background-color: #eeeded;
+}
+.all_wrpa .item_wrap {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12rpx;
+}
+.all_wrpa .item_wrap .top_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrpa .item_wrap .top_wrap .name {
+  font-weight: 600;
+  max-width: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.all_wrpa .item_wrap .top_wrap .money {
+  margin-left: 30%;
+  color: red;
+}
+.all_wrpa .item_wrap .tip_wrpa {
+  display: flex;
+  flex-direction: row;
+  font-size: 32rpx;
+}
+.all_wrpa .item_wrap .tip_wrpa .item_tip {
+  border-radius: 10rpx;
+  margin-left: 24rpx;
+  padding: 5rpx;
+  text-align: center;
+  background-color: #e4e4e4;
+  color: #a0a0a0;
+}
+.all_wrpa .item_wrap .boss_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrpa .item_wrap .boss_wrap image {
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 50%;
+}
+.all_wrpa .item_wrap .boss_wrap .boss_name {
+  font-size: 28rpx;
+  margin-left: 24rpx;
+  max-width: 140rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.all_wrpa .item_wrap .boss_wrap .add {
+  margin-left: 180rpx;
+  max-width: 240rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 34rpx;
+}

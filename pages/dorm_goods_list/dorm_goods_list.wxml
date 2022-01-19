@@ -1,0 +1,51 @@
+<view class="content_wrap_all">
+    <view class="shop_wrap">
+        <view class="top_wrap">
+            <view class="shop_name">{{shop_info.shop_name}}</view>
+            <view class="shop_img">
+                <image src="https://z3.ax1x.com/2021/05/16/ggSzzn.png" />
+            </view>
+        </view>
+        <view class="content_wrap">
+            <view class="shop_detail">{{shop_info.shop_detail}}</view>
+            <view class="shop_phone">商家电话：{{shop_info.shop_contect}}</view>
+            <view class="shop_statue" wx:if="{{shop_statue==true}}">店铺状态：在线</view>
+            <view class="shop_statue_1" wx:else>店铺状态：离线</view>
+        </view>
+    </view>
+    <view class="title">商品列表</view>
+    <view class="all_wrap">
+        <view class="right_wrap" >
+            <view class="right_wrap_item" wx:for="{{goodsObj}}">
+                <view class="img">
+                    <image src="{{item.goods_img}}" />
+                </view>
+                <view class="content_wrap">
+                    <view class="goods_name">{{item.goods_name}}</view>
+                    <view class="goods_detail">{{item.goods_detail}}</view>
+                    <view class="goods_price">￥{{item.goods_price}}</view>
+                </view>
+                <view class="buy">
+                    <view class="sub" bind:tap="sub" data-index="{{index}}">-</view>
+                    <view class="num">{{item.goods_num}}</view>
+                    <view class="add" bind:tap="add" data-index="{{index}}">+</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- <view class="goods_wrap">
+        <view class="img">
+            <image src="https://z3.ax1x.com/2021/05/16/ggSjiQ.png" />
+        </view>
+        <view class="content_wrap">
+            <view class="goods_name">名字</view>
+        </view>
+    </view> -->
+    <view class="pay_wrap">
+        <view class="wrap">
+            <view class="price">总计：￥{{total_price}}</view>
+            <button class="bt" type="primary" bind:tap="gotoPay">付款</button>
+        </view>
+    </view>
+</view>
+<!-- 付款 -->

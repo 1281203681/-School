@@ -1,0 +1,45 @@
+.all_wrap {
+    .item_wrap {
+        display       : flex;
+        flex-direction: column;
+
+        .content_wrap {
+            display       : flex;
+            flex-direction: row;
+            padding       : 24rpx;
+
+            .img {
+                image {
+                    height: 140rpx;
+                    width : 140rpx;
+                }
+            }
+
+            .mess_wrap {
+                display       : flex;
+                flex-direction: column;
+                padding-left  : 24rpx;
+
+                .name {
+                    max-width    : 280rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                }
+
+                .content {
+                    max-width    : 380rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                    color        : rgb(204, 204, 204);
+                    font-size    : 33rpx;
+                }
+
+                .price {
+                    color: red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.all_wrap .add_wrap {
+  font-size: 32rpx;
+  padding: 24rpx;
+  display: flex;
+  flex-direction: row;
+}
+.all_wrap .add_wrap .user_wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 60%;
+}
+.all_wrap .add_wrap .user_phone {
+  flex: 30%;
+}
+.all_wrap .tip {
+  text-align: center;
+  border-bottom: 1rpx solid red;
+  border-top: 1rpx solid red;
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+  color: red;
+  font-size: 48rpx;
+}
+.all_wrap .pay_wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.all_wrap .pay_wrap .price {
+  text-align: center;
+  color: red;
+  font-size: 68rpx;
+}
+.all_wrap .pay_wrap button {
+  margin-top: 48rpx;
+}
+.all_wrap .tip_wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24rpx;
+  padding: 24rpx;
+}
+.all_wrap .tip_wrap input {
+  margin-top: 12rpx;
+  border: 1rpx solid #a7a5a5;
+  text-align: start;
+  padding-bottom: 96rpx;
+}

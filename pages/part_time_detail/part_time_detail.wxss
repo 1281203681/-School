@@ -1,0 +1,65 @@
+.all_wrap .top_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrap .top_wrap .title {
+  font-size: 52rpx;
+  width: 80%;
+  font-weight: 600;
+}
+.all_wrap .top_wrap .price {
+  color: red;
+}
+.all_wrap .tip_wrap {
+  padding: 24rpx;
+}
+.all_wrap .send_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+  border-top: 1rpx solid #e2e2e2;
+  border-bottom: 1rpx solid #e2e2e2;
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+.all_wrap .send_wrap .img image {
+  border-radius: 50%;
+  height: 120rpx;
+  width: 120rpx;
+}
+.all_wrap .send_wrap .send_name {
+  margin-left: 24rpx;
+}
+.all_wrap .send_tip {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrap .send_tip .tip {
+  border-radius: 10rpx;
+  margin-left: 24rpx;
+  padding: 5rpx;
+  text-align: center;
+  background-color: #e4e4e4;
+  color: #a0a0a0;
+}
+.all_wrap .detail {
+  padding: 24rpx;
+}
+.all_wrap .go {
+  display: flex;
+  position: fixed;
+  width: 95%;
+  bottom: 55rpx;
+  background-color: yellowgreen;
+  margin-left: 2%;
+  border-radius: 12rpx;
+}
+.all_wrap .go .text {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+}

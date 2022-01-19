@@ -1,0 +1,4 @@
+<view class="all_wrap">
+    <input class="input" placeholder="请输入评论内容" />
+    <view class="send">发送</view>
+</view>

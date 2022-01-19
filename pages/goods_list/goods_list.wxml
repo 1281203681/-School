@@ -1,0 +1,38 @@
+<view class="all_wrap" wx:if="{{goodsObj}}">
+    <view class="item_goods" wx:for="{{goodsObj}}" bind:tap="goods_detail" data-item="{{item}}">
+        <view class="goods_detail">
+            <image src="{{item.goods_img}}" />
+            <view class="goods_name">{{item.goods_name}}</view>
+        </view>
+    </view>
+</view>
+<view class="all_wrap" wx:elif="{{goodsObj_1}}">
+    <view class="item_goods" wx:for="{{goodsObj_1}}" wx:for-item="item" wx:for-index="index" bind:tap="gotoList" data-item="{{item}}">
+        <view class="goods_detail">
+            <image src="{{item.shop_img}}" />
+            <view class="right_wrap">
+                <view class="goods_name">{{item.shop_name}}</view>
+                <view class="shop_detail">{{item.shop_detail}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<page-container class="tip_wrap" show="{{tip_show}}">
+    <view class="shop_info">
+        <image src="{{goods_detail_obj.goods_img}}" />
+        <view class="goods_name">{{goods_detail_obj.goods_name}}</view>
+        <view class="goods_price">单价：￥{{goods_detail_obj.goods_price}}</view>
+        <view class="goods_detail">{{goods_detail_obj.goods_detail}}</view>
+        <view class="shop_phone">{{goods_detail_obj.goods_phone}}</view>
+    </view>
+    <view class="goods_info">
+        <view class="up_file" bind:tap="uploadFile">上传文件</view>
+        <view class="operation_wrap">
+            <view class="tip">请输入打印页数：</view>
+            <input placeholder="打印页数" type="number" bind:input="handleNum" />
+        </view>
+        <view class="pay" bind:tap="gotoPay">付款</view>
+        <view class="total_price">总价：{{total_price}}</view>
+        <view class="upload_watch" hidden="{{file_statue}}">文件</view>
+    </view>
+</page-container>

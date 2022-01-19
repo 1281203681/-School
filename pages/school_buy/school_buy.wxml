@@ -1,0 +1,12 @@
+<view class="all_wrap">
+    <view class="item_wrap">
+        <navigator class="info_wrap"  wx:for="{{shopObj}}" data-item="{{item}}" bind:tap="gotoGoods">
+            <image  src="{{item.shop_img}}"/>
+            <!-- <view class="goods_name">打印店</view> -->
+            <view class="content_wrpa">
+                <view class="goods_name">{{item.shop_name}}</view>
+                <view class="goods_detail">{{item.shop_detail}}</view>
+            </view>
+        </navigator>
+    </view>
+</view>

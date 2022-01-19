@@ -1,0 +1,13 @@
+<view class="all_wrap">
+    <view class="item_wrap" wx:for="{{4}}">
+        <view class="img">
+            <image src="https://z3.ax1x.com/2021/05/16/ggSzzn.png" />
+        </view>
+        <view class="mess_list">
+            <view class="list_1">火山石考场</view>
+            <view class="list_2">下单时间：2021/4/4</view>
+            <view class="list_3">￥23.00</view>
+        </view>
+        <view class="statue">配送中</view>
+    </view>
+</view>

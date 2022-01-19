@@ -1,0 +1,21 @@
+<view class="all_wrap">
+    <view class="list_wrap">
+        <view class="list">
+            联系人：
+            <text class="list_content">{{userRealInfo.userRealName}}</text>
+        </view>
+        <view class="list">
+            联系方式：
+            <text class="list_content">{{userRealInfo.userRealPhone}}</text>
+        </view>
+        <view class="list">
+            所在学院：
+            <text class="list_content">{{userRealInfo.userRealSchool}}</text>
+        </view>
+        <view class="list">
+            配送地址:
+            <text class="list_content">{{userRealInfo.userRealAdd}}</text>
+        </view>
+    </view>
+    <button class="bt" type="primary" bind:tap="gotoUserInfo">修改信息</button>
+</view>

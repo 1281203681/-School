@@ -1,0 +1,56 @@
+<view class="all_wrap" wx:if="{{weatherShop==true&&shopType==1}}">
+    <view class="shop_wrap">
+        <view class="shop_img" bind:tap="changeImg">
+            <image src="{{goodsObj.goods_img}}" />
+        </view>
+        <view class="tip">更换头像</view>
+    </view>
+    <view class="list_wrap">
+        <view class="list" bind:tap="changeName" id="1">名称<text class="content">{{goodsObj.goods_name}}</text></view>
+        <view class="list" bind:tap="changeName" id="2">简介<text class="content">{{goodsObj.goods_detail}}</text></view>
+        <view class="list" bind:tap="changeName" id="3">联系方式<text class="content">{{goodsObj.goods_phone}}</text></view>
+        <view class="list" bind:tap="changeName" id="4">单张价格<text class="content">{{goodsObj.goods_price}}</text></view>
+    </view>
+    <view class="list_wrpa_s">
+        <view class="list_s">店铺状态<text class="tip" wx:if="{{goodsObj.shop_or==true}}">在线</text><text class="tip" wx:if="{{goodsObj.shop_or==false}}">离线</text></view>
+        <view class="list_s">上下线管理<switch type="switch" class="switch" checked="{{goodsObj.shop_or}}" bind:tap="checkStatue"/></view>
+    </view>
+    <view class="order_wrap">
+        <view class="title">待处理订单:12个</view>
+        <view class="order_item" wx:for="{{1}}">
+            <view class="order_title">订单信息[待处理]</view>
+            <view class="order_detail_wrpa">
+                <image src="https://z3.ax1x.com/2021/08/12/fBKLtJ.png" />
+                <view class="tip">打印文件*12张</view>
+                <view class="one_price">￥0.16</view>
+            </view>
+            <view class="total_price">总计：28.00元</view>
+            <view class="info_wrap">
+                <view class="list">订单号：</view>
+                <view class="list">联系人</view>
+                <view class="list">联系方式</view>
+                <view class="list">配送地址</view>
+                <view class="list">下单日期</view>
+                <view class="list_1">备注:</view>
+            </view>
+            <view class="opration_wrap">
+                <button type="primary" size="mini">下载文件</button>
+                <button type="default" size="mini">确认送达</button>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- <view class="second_wrap" wx:else bind:tap="creatShop">
+    <view class="tip">创建店铺</view>
+    <page-container show="{{activity}}" class="choose_wrpa">
+        <view class="title">请选择创建的店铺类型</view>
+        <view class="choose_shop">
+            <button type="primary" size="mini" bind:tap="printShop">打印店</button>
+            <button type="default" size="mini" bind:tap="dormShop">宿舍小卖铺</button>
+        </view>
+    </page-container>
+</view> -->
+<!-- 弹出输入框 -->
+<modal hidden="{{modal_statue}}" title="编辑内容" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type="text" placeholder="修改商品名" bind:input="changeConent"/>
+</modal>

@@ -1,0 +1,59 @@
+<view class="all_wrap" wx:if="{{userInfo}}">
+    <view class="user_wrap">
+        <image src="{{userInfo.avatarUrl}}" />
+        <view class="user_info">
+            <view class="user_name">{{userInfo.nickName}}</view>
+            <view class="user_content">欢迎光临~</view>
+        </view>
+    </view>
+    <!-- 列表1开始 -->
+    <view class="list_wrap">
+        <navigator class="list" url="/pages/send/send">
+            我要传话
+            <text class="tip">></text>
+        </navigator>
+        <navigator class="list" url="/pages/my_send/my_send">
+            我的发布
+            <text class="tip">></text>
+        </navigator>
+        <navigator class="list" url="/pages/user_notic/user_notic">
+            我的通知
+            <text class="tip"><text class="tip_user" hidden="{{numHid}}">{{num}}</text>></text>
+        </navigator>
+        <navigator class="list" url="/pages/school_info/school_info">
+            配送地址
+            <text class="tip">></text>
+        </navigator>
+    </view>
+    <!-- 列表1结束 -->
+    <!-- 列表2开始 -->
+    <view class="list2_wrap">
+        <navigator class="list2">
+            平台约定
+            <text class="tip2">></text>
+        </navigator>
+        <navigator class="list2">
+            关于我们
+            <text class="tip2">></text>
+        </navigator>
+        <navigator class="list2" bind:tap="gotoShop">
+            店铺管理
+            <text class="tip2">></text>
+        </navigator>
+    </view>
+    <!-- 列表2结束 -->
+    <!-- 联系客服开始 -->
+    <button open-type="contact" type="primary" class="bt">联系客服</button>
+    <!-- 联系客服结束 -->
+</view>
+<view class="login" wx:else>
+    <navigator url="/pages/login/login">登录</navigator>
+</view>
+<!-- 创建店铺 -->
+<page-container show="{{active}}" class="tip">
+    <view class="title">创建店铺</view>
+    <view class="choose_wrap">
+        <button type="primary" size="mini" bind:tap="printShop">打印店</button>
+        <button type="default" size="mini" bind:tap="dormShop">宿舍小卖铺</button>
+    </view>
+</page-container>

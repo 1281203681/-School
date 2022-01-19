@@ -1,0 +1,193 @@
+.all_wrap {
+    display       : flex;
+    flex-direction: row;
+    margin-bottom: 150rpx;
+
+    // .left_wrap {
+    //     .item_wrap {
+    //         border-bottom: 1rpx solid rgb(233, 233, 233);
+    //         width        : 180rpx;
+    //     }
+    // }
+
+    .right_wrap {
+        display       : flex;
+        flex-direction: column;
+
+        .right_wrap_item {
+            display       : flex;
+            flex-direction: row;
+            padding-left: 24rpx;
+
+            // padding-right: 96rpx;
+            // flex: 4;
+            .img {
+                // padding: 24rpx;
+                padding-top: 24rpx;
+
+                image {
+                    height: 140rpx;
+                    width : 140rpx;
+                }
+            }
+
+            .content_wrap {
+                width         : 340rpx;
+                display       : flex;
+                flex-direction: column;
+                padding       : 24rpx;
+
+                .goods_name {
+                    max-width    : 340rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                }
+
+                .goods_detail {
+                    color        : rgb(212, 209, 209);
+                    max-width    : 340rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                    font-size: 32rpx;
+                }
+
+                .goods_price {
+                    color: red;
+                }
+            }
+
+            .buy {
+                // background-color: rebeccapurple;
+                padding-right : 12rpx;
+                display       : flex;
+                flex-direction: row;
+                align-items   : center;
+
+                .sub {
+                    margin-right : 24rpx;
+                    border       : 1rpx solid rgb(0, 0, 0);
+                    padding-left : 12rpx;
+                    padding-right: 12rpx;
+                    font-weight  : 600;
+                }
+
+                .num {}
+
+                .add {
+                    margin-left  : 24rpx;
+                    border       : 1rpx solid rgb(0, 0, 0);
+                    padding-left : 12rpx;
+                    padding-right: 12rpx;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.pay_wrap {
+    position        : fixed;
+    bottom          : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 150rpx;
+    background-color: rgb(226, 225, 225);
+    display         : flex;
+    border-top      : 1px solid #ccc;
+
+    .wrap{
+        background: rgba(255, 255, 255, 0.3);
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .price{
+            flex: 3;
+            // background-color: red;
+            text-align: center;
+            justify-items: center;
+            padding-top: 50rpx;
+            font-size: 44rpx;
+            color: red;
+        }
+        .bt{
+            margin-right: 24rpx;
+            flex: 1;
+            margin-top: 30rpx;
+            margin-bottom: 30rpx;
+            width: auto;
+        }
+    }
+}
+
+.shop_wrap {
+    display       : flex;
+    flex-direction: column;
+    padding-bottom: 24rpx;
+
+    .top_wrap {
+        background-image: linear-gradient(to right, rgb(140, 222, 243), rgb(253, 253, 253));
+        display         : flex;
+        flex-direction  : row;
+
+        .shop_name {
+            // background-color: red;
+            width          : 80%;
+            text-align     : end;
+            justify-content: flex-end;
+            padding-top    : 15%;
+            max-width      : 80%;
+            overflow       : hidden;
+            text-overflow  : ellipsis;
+            white-space    : nowrap;
+            font-weight    : 600;
+        }
+
+        .shop_img {
+            image {
+                height: 180rpx;
+                width : 180rpx;
+            }
+        }
+    }
+
+    .content_wrap {
+        background    : linear-gradient(#b9ffd4 50%, #eef3f2 50%);
+        display       : flex;
+        flex-direction: column;
+        padding       : 24rpx;
+
+        .shop_detail {
+            max-width      : 60%;
+            overflow       : hidden;
+            text-overflow  : ellipsis;
+            white-space    : nowrap;
+        }
+
+        .shop_phone {}
+
+        .shop_statue {
+            // border: 1rpx soi ;
+            background-color: rgb(9, 253, 90);
+            color           : white;
+            width           : 280rpx;
+            text-align      : center;
+            // float: right;
+        }
+
+        .shop_statue_1 {
+            background-color: rgb(116, 121, 117);
+            color           : white;
+            width           : 280rpx;
+            text-align      : center;
+        }
+    }
+}
+
+.title {
+    text-align: center;
+    padding   : 24rpx;
+}

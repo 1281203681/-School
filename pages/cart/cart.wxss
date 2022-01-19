@@ -1,0 +1,21 @@
+.all_wrap .item_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.all_wrap .item_wrap .img image {
+  height: 150rpx;
+  width: 150rpx;
+}
+.all_wrap .item_wrap .mess_list {
+  padding: 24rpx;
+}
+.all_wrap .item_wrap .mess_list .list_2 {
+  font-size: 33rpx;
+  color: #9c9c9c;
+}
+.all_wrap .item_wrap .mess_list .list_3 {
+  color: red;
+}
+.all_wrap .item_wrap .statue {
+  padding: 24rpx;
+}

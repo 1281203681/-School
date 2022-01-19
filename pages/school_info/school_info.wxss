@@ -1,0 +1,18 @@
+.all_wrap .list_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .list_wrap .list {
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrap .list_wrap .list .list_content {
+  float: right;
+  padding-right: 24rpx;
+}
+.all_wrap .list_wrap .list input {
+  float: right;
+}
+.all_wrap .bt {
+  margin-top: 96rpx;
+}

@@ -1,0 +1,19 @@
+<view class="all_wrap">
+    <navigator class="notic_list" wx:for="{{noticObj}}" bind:tap="gotoDetail" data-item="{{item}}">
+        <image  src="{{item.userImg}}"/>
+        <view class="content_wrap">
+            <view class="name">{{item.userName}}</view>
+            <view class="content">{{item.content}}</view>
+        </view>
+    </navigator>
+</view>
+<page-container show="{{active}}" class="tip_wrap">
+    <view class="title">标题</view>
+    <view class="name">{{detailObj.userName}}</view>
+    <view class="content">{{detailObj.content}}</view>
+    <view class="end_wrap">
+        <view class="time">时间：{{detailObj.sendTime}}</view>
+        <view class="send_name">发布：{{detailObj.sendName}}</view>
+        <view class="scan_num">浏览：{{detailObj.okUser.length}}</view>
+    </view>
+</page-container>

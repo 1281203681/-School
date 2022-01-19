@@ -1,0 +1,111 @@
+.all_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.all_wrap .left_wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.all_wrap .left_wrap .item_list {
+  padding-bottom: 12rpx;
+}
+.all_wrap .left_wrap .add_tip {
+  text-align: center;
+  padding: 24rpx;
+  font-size: 42rpx;
+  background-color: #ececec;
+}
+.all_wrap .right_wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.all_wrap .right_wrap .item_wrap {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+.all_wrap .right_wrap .item_wrap .img image {
+  height: 100rpx;
+  width: 100rpx;
+}
+.all_wrap .right_wrap .item_wrap .mess_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 180rpx;
+}
+.all_wrap .right_wrap .item_wrap .mess_wrap .goods_name {
+  max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.all_wrap .right_wrap .item_wrap .mess_wrap .price {
+  color: red;
+  max-width: 150rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.all_wrap .right_wrap .item_wrap .tip_wrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100rpx;
+  margin-bottom: 6rpx;
+}
+.all_wrap .right_wrap .item_wrap .tip_wrap .tip_1 {
+  padding: 4rpx;
+  border: 1rpx solid blue;
+  background-color: blue;
+  margin-bottom: 3rpx;
+  color: white;
+  border-radius: 12rpx;
+}
+.all_wrap .right_wrap .item_wrap .tip_wrap .tip_2 {
+  color: white;
+  margin-top: 3rpx;
+  padding: 4rpx;
+  border: 1rpx solid red;
+  background-color: red;
+  border-radius: 12rpx;
+}
+.all_wrap .right_wrap .add_tip {
+  text-align: center;
+  font-size: 52rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+  padding: 24rpx;
+  background-color: #ececec;
+}
+.tip_all_wrap .top_content {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.tip_all_wrap .top_content .img image {
+  height: 120rpx;
+  width: 120rpx;
+}
+.tip_all_wrap .top_content .input_wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx;
+}
+.tip_all_wrap .top_content .input_wrap .list {
+  display: flex;
+  flex-direction: row;
+}
+.tip_all_wrap .top_content .input_wrap .list .title {
+  width: 200rpx;
+}
+.tip_all_wrap .top_content .input_wrap .list input {
+  float: right;
+  width: 300rpx;
+}
+.tip_all_wrap .bt_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}

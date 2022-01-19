@@ -1,0 +1,38 @@
+<view class="all_wrap">
+    <view class="top_wrap">
+        <view class="img" bind:tap="changeImg">
+            <image src="{{shop_img}}" />
+        </view>
+        <view class="tip">更换头像</view>
+    </view>
+    <view class="list_wrap">
+        <navigator class="list">订单管理<text class="tip">></text></navigator>
+        <navigator class="list" url="/pages/dorm_goods/dorm_goods">商品管理<text class="tip">></text></navigator>
+        <navigator class="list" url="/pages/wallet/wallet">我的钱包<text class="tip">></text></navigator>
+        <navigator class="list" url="/pages/dorm_shop_mani/dorm_shop_mani">管理店铺<text class="tip">></text></navigator>
+    </view>
+    <view class="order_wrap">
+        <view class="title">待处理订单:12个</view>
+        <view class="order_item" wx:for="{{1}}">
+            <view class="order_title">订单信息[待处理]</view>
+            <view class="order_detail_wrpa">
+                <image src="https://z3.ax1x.com/2021/08/12/fBKLtJ.png" />
+                <view class="tip">打印文件*12张</view>
+                <view class="one_price">￥0.16</view>
+            </view>
+            <view class="total_price">总计：28.00元</view>
+            <view class="info_wrap">
+                <view class="list">订单号：</view>
+                <view class="list">联系人</view>
+                <view class="list">联系方式</view>
+                <view class="list">配送地址</view>
+                <view class="list">下单日期</view>
+                <view class="list_1">备注:</view>
+            </view>
+            <view class="opration_wrap">
+                <button type="primary" size="mini">开始配送</button>
+                <button type="default" size="mini">确认送达</button>
+            </view>
+        </view>
+    </view>
+</view>

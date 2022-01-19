@@ -1,0 +1,22 @@
+<view class="all_wrap"
+wx:if="{{goodsObj[0]}}"
+>
+    <navigator class="item_wrap" wx:for="{{goodsObj}}" data-item="{{item}}" bind:tap="gotoDetail">
+        <view class="img_wrap">
+            <image class="goods_img" src="{{item.imgId}}" />
+            <view class="user_wrap">
+                <image class="user_img" src="{{item.userImg}}" />
+                <text class="user_name">{{item.userName}}</text>
+            </view>
+        </view>
+        <view class="contene_wrap">
+            <view class="content">{{item.content}}</view>
+            <view class="price">￥{{item.price}}</view>
+        </view>
+    </navigator>
+</view>
+<view class="tip"
+wx:else
+>
+    ---暂无二手信息---
+</view>

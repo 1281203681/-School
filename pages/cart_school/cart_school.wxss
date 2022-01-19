@@ -1,0 +1,35 @@
+.all_wrap .item_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .item_wrap .content_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrap .item_wrap .content_wrap .img image {
+  height: 140rpx;
+  width: 140rpx;
+}
+.all_wrap .item_wrap .content_wrap .mess_wrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24rpx;
+}
+.all_wrap .item_wrap .content_wrap .mess_wrap .name {
+  max-width: 280rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.all_wrap .item_wrap .content_wrap .mess_wrap .content {
+  max-width: 380rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #cccccc;
+  font-size: 33rpx;
+}
+.all_wrap .item_wrap .content_wrap .mess_wrap .price {
+  color: red;
+}

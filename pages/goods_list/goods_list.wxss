@@ -1,0 +1,109 @@
+.all_wrap .item_goods {
+  display: flex;
+  border-bottom: 1rpx solid #c4c2c2;
+}
+.all_wrap .item_goods .goods_detail {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrap .item_goods .goods_detail image {
+  height: 140rpx;
+  width: 140rpx;
+}
+.all_wrap .item_goods .goods_detail .right_wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 12rpx;
+}
+.all_wrap .item_goods .goods_detail .right_wrap .goods_name {
+  font-weight: 600;
+}
+.all_wrap .item_goods .goods_detail .right_wrap .shop_detail {
+  padding-top: 12rpx;
+  color: #b3b3b3;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tip_wrap {
+  display: flex;
+}
+.tip_wrap .shop_info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  border-right: 1rpx solid #d4d4d4;
+}
+.tip_wrap .shop_info image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.tip_wrap .shop_info .goods_name {
+  font-weight: 600;
+}
+.tip_wrap .shop_info .goods_price {
+  color: red;
+  font-size: 32rpx;
+}
+.tip_wrap .shop_info .goods_detail {
+  font-size: 32rpx;
+  color: #797878;
+}
+.tip_wrap .shop_info .shop_phone {
+  font-size: 32rpx;
+  color: #797878;
+}
+.tip_wrap .goods_info {
+  width: 69%;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding-top: 24rpx;
+}
+.tip_wrap .goods_info .up_file {
+  padding: 12rpx;
+  border: 1rpx solid yellowgreen;
+  color: yellowgreen;
+  width: 240rpx;
+  text-align: center;
+}
+.tip_wrap .goods_info .operation_wrap {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24rpx;
+}
+.tip_wrap .goods_info .operation_wrap .tip {
+  font-size: 34rpx;
+}
+.tip_wrap .goods_info .operation_wrap input {
+  width: 180rpx;
+  font-size: 32rpx;
+  border-bottom: 1rpx solid #cccbcb;
+}
+.tip_wrap .goods_info .pay {
+  margin-left: 70%;
+  margin-top: 48rpx;
+  border: 1rpx solid yellowgreen;
+  color: yellowgreen;
+  width: 128rpx;
+  text-align: center;
+  border-radius: 24rpx;
+}
+.tip_wrap .goods_info .total_price {
+  color: red;
+  width: 240rpx;
+  margin-left: 55%;
+  margin-top: 12rpx;
+  font-size: 34rpx;
+}
+.tip_wrap .goods_info .upload_watch {
+  margin-left: 96rpx;
+  padding: 24rpx;
+  border: 1rpx solid red;
+  width: 96rpx;
+  text-align: center;
+  color: skyblue;
+}

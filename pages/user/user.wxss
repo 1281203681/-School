@@ -1,0 +1,89 @@
+page {
+  background-color: #f0f0f0;
+}
+.all_wrap .user_wrap {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 12rpx;
+}
+.all_wrap .user_wrap image {
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 50%;
+}
+.all_wrap .user_wrap .user_info {
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx;
+}
+.all_wrap .user_wrap .user_info .user_name {
+  font-weight: 600;
+}
+.all_wrap .user_wrap .user_info .user_content {
+  font-size: 32rpx;
+}
+.all_wrap .list_wrap {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24rpx;
+}
+.all_wrap .list_wrap .list {
+  padding: 24rpx;
+}
+.all_wrap .list_wrap .list .tip {
+  float: right;
+  padding-right: 12rpx;
+}
+.all_wrap .list_wrap .list .tip .tip_user {
+  color: white;
+  background-color: red;
+  border: 1rpx solid red;
+  border-radius: 50%;
+  padding: 8rpx;
+  font-size: 32rpx;
+  font-weight: 1000;
+  margin-right: 12rpx;
+}
+.all_wrap .list2_wrap {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24rpx;
+}
+.all_wrap .list2_wrap .list2 {
+  padding: 24rpx;
+}
+.all_wrap .list2_wrap .list2 .tip2 {
+  float: right;
+  padding-right: 12rpx;
+}
+.all_wrap .bt {
+  margin-top: 48rpx;
+}
+.login {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  color: greenyellow;
+  font-size: 50rpx;
+}
+.login navigator {
+  border: 1rpx solid greenyellow;
+  padding: 10rpx 10rpx;
+}
+.tip .title {
+  text-align: center;
+  padding-top: 24rpx;
+}
+.tip .choose_wrap {
+  padding-top: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.tip .choose_wrap button {
+  margin-top: 24rpx;
+  width: 300rpx;
+}

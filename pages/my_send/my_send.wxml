@@ -1,0 +1,19 @@
+<view class="all_wrap">
+    <view 
+    class="item_wrap"
+    wx:for="{{mesObj}}"
+    >
+        <view 
+        class="left_wrap"
+        data-id="{{item}}"
+        bind:tap="gotoDetail"
+        >
+            <image src="{{item.imgId}}" wx:if="{{item.imgId}}"/>
+            <image wx:else hidden="{{true}}" />
+            <view class="content">{{item.content}}</view>
+        </view>
+        <view class="right_wrap">
+            <view class="del_tip" bind:tap="delet" data-item="{{item}}">删除</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+<view class="all_wrap">
+    <view class="top_wrap">
+        <view class="title">{{messObj.title}}</view>
+        <view class="price">￥{{messObj.price}}</view>
+    </view>
+    <view class="tip_wrap">
+        <view class="add">📍地址：{{messObj.add}}</view>
+    </view>
+    <view class="send_wrap">
+        <view class="img">
+            <image src="{{messObj.fileID}}" />
+        </view>
+        <view class="send_name">{{messObj.sendName}}</view>
+    </view>
+    <view class="send_tip" wx:if="{{messObj.tip}}">
+        <view class="tip" wx:for="{{messObj.tip}}">{{item}}</view>
+    </view>
+    <view class="send_tip" wx:else>
+        <view class="tip" wx:for="{{messObj.list}}">{{item}}</view>
+    </view>
+    <view class="detail">{{messObj.detail}}</view>
+    <view class="go">
+        <view class="text">立即沟通</view>
+    </view>
+</view>

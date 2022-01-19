@@ -1,0 +1,55 @@
+<view class="all_wrap">
+    <scroll-view class="left_wrap">
+        <view class="item_list" wx:for="{{goods_type_obj}}" wx:for-index="index" wx:for-item="item">{{item}}</view>
+        <view class="add_tip" bind:tap="add_type">+</view>
+    </scroll-view>
+    <scroll-view class="right_wrap">
+        <view class="item_wrap" wx:for="{{goods_obj}}">
+            <view class="img">
+                <image src="{{item.goods_img}}" />
+            </view>
+            <view class="mess_wrap">
+                <view class="goods_name">{{item.goods_name}}</view>
+                <view class="price">￥{{item.goods_price}}</view>
+            </view>
+            <view class="tip_wrap">
+                <view class="tip_1" bind:tap="changeGoods" data-name="{{item}}">编辑</view>
+                <view class="tip_2" bind:tap="deletGoods" data-item="{{item}}">删除</view>
+            </view>
+        </view>
+        <view class="add_tip" bind:tap="add_goods">+</view>
+    </scroll-view>
+</view>
+<modal hidden="{{modal_statue}}" title="添加内容" confirm-text="添加" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type="text" placeholder="添加分类" bind:input="addContent" />
+</modal>
+<page-container show="{{add_goods_active}}" class="tip_all_wrap">
+    <view class="top_content">
+        <view class="img" bind:tap="uploadImg">
+            <image src="https://z3.ax1x.com/2021/08/16/fR6yEd.png" />
+        </view>
+        <view class="input_wrap">
+            <view class="list">
+                <view class="title">商品名：</view>
+                <input placeholder="请输入商品名" bind:input="goods_name"/>
+            </view>
+            <view class="list">
+                <view class="title">商品介绍：</view>
+                <input placeholder="请输入商品介绍" bind:input="goods_detail"/>
+            </view>
+            <view class="list">
+                <view class="title">价格：</view>
+                <input placeholder="请输入商品价格" bind:input="goods_price"/>
+            </view>
+            <view class="list">
+                <picker mode="selector" bindchange="pickerChange" value="{{index}}" range="{{goods_type_obj}}" class="change">
+                    <view class="picker">选择发布类型：{{goods_type_obj[index]}}</view>
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="bt_wrap">
+        <button type="default" size="mini">取消</button>
+        <button type="primary" size="mini" bind:tap="submit">提交</button>
+    </view>
+</page-container>

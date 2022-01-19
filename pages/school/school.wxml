@@ -1,0 +1,38 @@
+<view class="all_wrap">
+    <!-- 循环项 -->
+    <view 
+    class="content_wrap" 
+    wx:for="{{contentObj}}"
+    data-item="{{item}}"
+    bind:tap="gotoDetail"
+    >
+        <!-- 个人信息容器 -->
+        <view class="title_wrap" wx:if="{{item.statue==false}}">
+            <image src="{{item.userImg}}" />
+            <view class="info_wrap">
+                <view class="user_name">{{item.userName}}</view>
+            </view>
+        </view>
+        <!-- 匿名发布 -->
+        <view class="title_wrap" wx:if="{{item.statue==true}}">
+            <image src="https://z3.ax1x.com/2021/04/24/cvsmuQ.png" />
+            <view class="info_wrap">
+                <view class="user_name">匿名</view>
+                <view class="user_info">匿名</view>
+            </view>
+        </view>
+        <!-- 信息展示容器 -->
+        <view class="mess_wrap">
+            <text class="tip">{{item.sendType}}</text>
+            <view class="mess">{{item.content}}</view>
+            <image src="{{item.imgId}}" wx:if="{{item.imgId==''}}" style="height:0;width:0" />
+            <view class="img"  wx:else>
+                <image class="img" src="{{item.imgId}}" mode="widthFix" />
+            </view>
+            <view class="sendTime">时间：{{item.time}}</view>
+        </view>
+        <!-- 互动开始 -->
+        <!-- <view class="play_wrap"></view> -->
+        <!-- 互动结束 -->
+    </view>
+</view>

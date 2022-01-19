@@ -1,0 +1,34 @@
+<view class="all_wrap">
+    <view class="title">内容描述</view>
+    <input class="content" placeholder="请输入内容描述..." bind:input="handleContent" />
+    <!-- <view class="swich_wrap">
+        <view class="swich_title">匿名发布</view>
+        <switch class="swich" bindchange="swich" checked="{{false}}" />
+    </view> -->
+    <!-- <view class="send_type">选择类型</view> -->
+    <!-- 选择器开始 -->
+    <!-- 选择器结束 -->
+    <view class="upload" bind:tap="upImg">+</view>
+    <image src="{{fileID}}" style="height:200rpx;width:200rpx" />
+    <view class="section_wrap">
+        <!-- <view class="section_title">选择发布类型</view> -->
+        <picker mode="selector" bindchange="pickerChange" value="{{index}}" range="{{arr}}" class="change">
+            <view class="picker">选择发布类型：{{arr[index]}}</view>
+        </picker>
+        <view class="price_wrap" >
+            <view class="price" hidden="{{priceInput}}">价格：</view>
+            <input placeholder="输入价格" bind:input="handlePrice" bind:tap="tip" type="digit" hidden="{{priceInput}}"/>
+        </view>
+    </view>
+    <view class="swich_wrap">
+        <view class="swich_title" >匿名发布</view>
+        <switch class="swich" bindchange="swich" checked="{{statue}}" />
+    </view>
+    <button bind:tap="bt_send" class="bt" type="primary">确定发布</button>
+    <view class="tip_wrap">
+        <view class="tip_list">·请勿发布违规内容</view>
+        <view class="tip_list">·以上信息仅用于展示</view>
+        <view class="tip_list">·匿名不展示个人信息（头像、昵称）</view>
+        <view class="tip_list">·请勿发布非本人二手信息</view>
+    </view>
+</view>

@@ -1,0 +1,38 @@
+.all_wrap {
+    .item_wrap {
+        display       : flex;
+        flex-direction: column;
+
+        .info_wrap {
+            // flex: 1;
+            display       : flex;
+            flex-direction: row;
+            border-bottom : 1rpx solid rgb(199, 199, 199);
+
+            image {
+                padding: 24rpx;
+                height : 140rpx;
+                width  : 140rpx;
+            }
+
+            .content_wrpa {
+                padding       : 24rpx;
+                display       : flex;
+                flex-direction: column;
+
+                .goods_name {
+                    padding-bottom: 12rpx;
+                }
+
+                .goods_detail {
+                    font-size    : 33rpx;
+                    color        : rgb(150, 150, 150);
+                    max-width    : 320rpx;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                }
+            }
+        }
+    }
+}

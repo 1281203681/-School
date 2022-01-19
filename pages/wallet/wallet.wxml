@@ -1,0 +1,16 @@
+<view class="all_wrap">
+    <view class="money_wrap">
+        <view class="name">零钱</view>
+        <view class="money_num">10.88</view>
+    </view>
+    <view class="cash_out">提现</view>
+    <!-- <view class="water">流水</view> -->
+    <view class="water_wrap">
+        <view class="title">流水</view>
+        <view class="list_item_wrap" wx:for="{{4}}">
+            <view class="money">+109.00</view>
+            <view class="time">2021/3/2</view>
+            <view class="statue">状态：已到账</view>
+        </view>
+    </view>
+</view>

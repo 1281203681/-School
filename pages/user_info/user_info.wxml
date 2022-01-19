@@ -1,0 +1,17 @@
+<view class="all_wrap">
+    <view class="list_wrap">
+        <view class="list">联系姓名：
+            <input placeholder="请输入联系人姓名" bind:input="inputName"/>
+        </view>
+        <view class="list">联系电话：
+            <input placeholder="请输入联系电话" bind:input="inputPhone" type="number"/>
+        </view>
+        <view class="list">所在学院：
+            <input placeholder="请输入所在学院" bind:input="inputSchool"/>
+        </view>
+        <view class="list">配送地址：
+            <input placeholder="请输入配送地址" bind:input="inputAdd"/>
+        </view>
+    </view>
+    <button type="primary" bind:tap="certent" class="bt">确认修改</button>
+</view>

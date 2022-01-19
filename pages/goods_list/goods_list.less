@@ -1,0 +1,153 @@
+.all_wrap {
+    .item_goods {
+        display      : flex;
+        border-bottom: 1rpx solid rgb(196, 194, 194);
+
+        .goods_detail {
+            display       : flex;
+            flex-direction: row;
+            padding       : 24rpx;
+
+            image {
+                height: 140rpx;
+                width : 140rpx;
+            }
+
+            .right_wrap {
+                display       : flex;
+                flex-direction: column;
+                padding       : 12rpx;
+
+                .goods_name {
+                    font-weight: 600;
+                }
+
+                .shop_detail {
+                    padding-top  : 12rpx;
+                    color        : rgb(179, 179, 179);
+                    max-width    : 70%;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                    // font-weight  : 600;
+                }
+
+            }
+        }
+    }
+}
+
+.tip_wrap {
+    // width: 100%;
+    display: flex;
+
+    // background-color: blueviolet;
+    // padding-top: 24rpx;
+    .shop_info {
+        width              : 30%;
+        // background-color: red;
+        display            : flex;
+        flex-direction     : column;
+        float              : left;
+        // padding-top: 24rpx;
+        // padding: 24rpx;
+        border-right       : 1rpx solid rgb(212, 212, 212);
+
+        image {
+            width : 180rpx;
+            height: 180rpx;
+        }
+
+        .goods_name {
+            font-weight: 600;
+        }
+
+        .goods_price {
+            color    : red;
+            font-size: 32rpx;
+        }
+
+        .goods_detail {
+
+            font-size: 32rpx;
+            color    : rgb(121, 120, 120);
+        }
+
+        .shop_phone {
+            font-size: 32rpx;
+            color    : rgb(121, 120, 120);
+        }
+    }
+
+    .goods_info {
+        width              : 69%;
+        // background-color: blue;
+        display            : flex;
+        flex-direction     : column;
+        float              : right;
+        padding-top        : 24rpx;
+
+        // text-align: center;
+        // text-align: right;
+        .up_file {
+            padding   : 12rpx;
+            border    : 1rpx solid yellowgreen;
+            color     : yellowgreen;
+            // width: auto;
+            width     : 240rpx;
+            text-align: center;
+        }
+
+        .operation_wrap {
+            display       : flex;
+            flex-direction: row;
+            margin-top    : 24rpx;
+
+            .tip {
+                // font-size: 32rpx;
+                font-size          : 34rpx;
+                // width: 320rpx;
+                // background-color: red;
+            }
+
+            input {
+                width        : 180rpx;
+                font-size    : 32rpx;
+                border-bottom: 1rpx solid rgb(204, 203, 203);
+            }
+        }
+
+        .pay {
+            // background-color: red;
+            // margin-left: 24rpx;
+            // float: right;
+            margin-left  : 70%;
+            margin-top   : 48rpx;
+            border       : 1rpx solid yellowgreen;
+            color        : yellowgreen;
+            width        : 128rpx;
+            text-align   : center;
+            border-radius: 24rpx;
+
+        }
+
+        .total_price {
+            // background-color: red;
+            color      : red;
+            width      : 240rpx;
+            margin-left: 55%;
+            margin-top : 12rpx;
+            font-size  : 34rpx;
+        }
+
+        .upload_watch {
+            margin-left: 96rpx;
+            padding    : 24rpx;
+            border     : 1rpx solid red;
+            width      : 96rpx;
+            // height: 100rpx;
+            text-align : center;
+            color      : skyblue;
+        }
+    }
+}

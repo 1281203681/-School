@@ -1,0 +1,117 @@
+.all_wrap .user_info_wrap {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 12rpx;
+}
+.all_wrap .user_info_wrap .img {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.all_wrap .user_info_wrap .info_wrap {
+  padding-left: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .user_info_wrap .info_wrap .user_name {
+  font-weight: 600;
+}
+.all_wrap .user_info_wrap .info_wrap .user_school {
+  padding-top: 24rpx;
+  font-size: 33rpx;
+}
+.all_wrap .mes_wrap {
+  background-color: white;
+  padding: 12rpx;
+  margin-top: 12rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24rpx;
+}
+.all_wrap .mes_wrap .mes_content {
+  padding: 24rpx;
+}
+.all_wrap .mes_wrap .mes_img {
+  margin-top: 12rpx;
+  text-align: center;
+}
+.all_wrap .play_wrap {
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.all_wrap .play_wrap .share {
+  display: flex;
+  margin-left: 48rpx;
+  width: auto;
+  font-size: 32rpx;
+  background-color: #b4f2fd;
+}
+.all_wrap .play_wrap .buy {
+  display: flex;
+  margin-left: 48rpx;
+  width: auto;
+  font-size: 32rpx;
+}
+.all_wrap .play_wrap .right_wrap {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-left: 400rpx;
+}
+.all_wrap .play_wrap .right_wrap .writ {
+  padding-left: 24rpx;
+}
+.all_wrap .writ_detail_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx;
+}
+.all_wrap .writ_detail_wrap image {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  margin-top: 24rpx;
+}
+.all_wrap .writ_detail_wrap .writ_content {
+  padding-left: 12rpx;
+  border-bottom: 1rpx solid #727272;
+  margin-left: 12rpx;
+  margin-top: 24rpx;
+}
+.all_wrap .writ_detail_wrap .send {
+  float: right;
+  padding: 12rpx;
+  border: 1rpx solid #aaaaaa;
+  border-radius: 24rpx;
+  margin-left: 48rpx;
+  margin-bottom: 12rpx;
+  font-size: 42rpx;
+}
+.all_wrap .write_content_wrap {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #cccccc;
+}
+.all_wrap .write_content_wrap image {
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  padding: 24rpx;
+}
+.all_wrap .write_content_wrap .content {
+  text-align: center;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+}
+.all_wrap .no_send {
+  text-align: center;
+  margin-top: 24rpx;
+  margin-bottom: 24rpx;
+}

@@ -1,0 +1,97 @@
+page{
+    background-color: rgb(247, 247, 247);
+}
+.all_wrap {
+    .top_wrap {
+        display: flex;
+        flex-direction: column;
+        .img {
+            text-align: center;
+            image {
+                height: 180rpx;
+                width: 180rpx;
+            }
+        }
+
+        .tip {
+            // background-color: red;
+            text-align: center;
+        }
+    }
+
+    .order_wrap {
+        margin-top: 24rpx;
+
+        .title {
+            // padding: 24rpx;
+            padding-left: 24rpx;
+        }
+
+        .order_item {
+            background-color: white;
+            margin-top      : 24rpx;
+            padding         : 24rpx;
+            display         : flex;
+            flex-direction  : column;
+
+            .order_title {}
+
+            .order_detail_wrpa {
+                display       : flex;
+                flex-direction: row;
+                // border: 1rpx solid ;
+                border-bottom : 1rpx solid rgb(170, 170, 170);
+
+                image {
+                    height: 180rpx;
+                    width : 180rpx;
+                }
+
+                .tip {}
+
+                .one_price {
+                    // background-color: red;
+                    margin-left: 130rpx;
+                }
+            }
+
+            .total_price {
+                // background-color: red;
+                text-align: right;
+                padding   : 24rpx;
+                color     : red;
+            }
+
+            .info_wrap {
+                .list {
+                    padding-bottom: 12rpx;
+                }
+
+                .list_1 {
+                    color: blue;
+                }
+            }
+
+            .opration_wrap {
+                display       : flex;
+                flex-direction: row;
+                padding       : 23rpx;
+
+                button {}
+            }
+        }
+    }
+    .list_wrap{
+        margin-top: 24rpx;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 24rpx;
+        .list{
+            padding: 12rpx;
+            .tip{
+                float: right;
+            }
+        }
+    }
+}

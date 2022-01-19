@@ -1,0 +1,30 @@
+.all_wrap .item_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .item_wrap .info_wrap {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #c7c7c7;
+}
+.all_wrap .item_wrap .info_wrap image {
+  padding: 24rpx;
+  height: 140rpx;
+  width: 140rpx;
+}
+.all_wrap .item_wrap .info_wrap .content_wrpa {
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .item_wrap .info_wrap .content_wrpa .goods_name {
+  padding-bottom: 12rpx;
+}
+.all_wrap .item_wrap .info_wrap .content_wrpa .goods_detail {
+  font-size: 33rpx;
+  color: #969696;
+  max-width: 320rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

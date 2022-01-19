@@ -1,0 +1,53 @@
+<scroll-view class="all_wrap">
+  <!-- 广告栏开始 -->
+  <view class="add">
+    <!-- <image mode="widthFix" src="https://z3.ax1x.com/2021/05/24/gjjp6A.png" /> -->
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="3000">
+      <swiper-item wx:for="{{4}}" wx:key="index">
+        <navigator url="{{item.url}}">
+          <image src="https://z3.ax1x.com/2021/05/24/gjjp6A.png" mode="widthFix"/>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 广告栏结束 -->
+  <!-- 导航栏开始 -->
+  <view class="navigator">
+    <navigator class="item" wx:for="{{naviObj}}" wx:for-index="index" wx:for-item="item" url="{{item.url}}">
+      <image src="{{item.picture_id}}" />
+      <view class="title">{{item.picture_name}}</view>
+    </navigator>
+  </view>
+  <!-- 导航栏结束 -->
+  <!-- 精选树洞开始 -->
+  <view class="title" id="title">精选留言</view>
+  <navigator class="hotcontent_wrap" wx:if="{{hotDataObj.length==0}}">
+    <view class="tip">-----暂无精选-----</view>
+  </navigator>
+  <navigator class="hotcontent_wrap" wx:for="{{hotDataObj}}" data-item="{{item}}" bind:tap="gotoDetail">
+    <view class="user_content" wx:if="{{item.statue==false}}">
+      <image src="{{item.userImg}}" />
+      <view class="user_name">
+        {{item.userName}}
+        <view class="type">{{item.sendType}}</view>
+      </view>
+    </view>
+    <view class="user_content" wx:else>
+      <image src="https://z3.ax1x.com/2021/08/09/fGEwAH.png" />
+      <view class="user_name">
+        匿名
+        <view class="type">{{item.sendType}}</view>
+      </view>
+    </view>
+    <!-- <view class="contene">{{item.content}}</view> -->
+    <view class="content_wrap">
+      <view class="content">{{item.content}}</view>
+      <image src="{{item.imgId}}" wx:if="{{!item.imgId}}" style="height:0;width:0" />
+      <image src="{{item.imgId}}" wx:else />
+    </view>
+    <view class="hot_tip">
+      <image src="cloud://yuanhe-5gbq4tqf522445bf.7975-yuanhe-5gbq4tqf522445bf-1305999188/评论分享/热门.png" />
+    </view>
+  </navigator>
+  <!-- 精选树洞结束 -->
+</scroll-view>

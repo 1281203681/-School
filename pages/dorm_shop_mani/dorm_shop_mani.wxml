@@ -1,0 +1,14 @@
+<view class="all_wrap">
+    <view class="list_wrap">
+        <view class="list" id="1" bind:tap="change">店铺名字<text class="content">{{shopObj.shop_name}}</text></view>
+        <view class="list" id="2" bind:tap="change">店铺介绍<text class="content">{{shopObj.shop_detail}}</text></view>
+        <view class="list" id="3" bind:tap="change">联系方式<text class="content">{{shopObj.shop_contect}}</text></view>
+    </view>
+    <view class="list_wrap_2">
+        <view class="list">店铺状态<text class="content" wx:if="{{shopObj.shop_or==true}}">在线</text><text class="content" wx:if="{{shopObj.shop_or==false}}">离线</text></view>
+        <view class="list">上线管理<switch type="switch" class="switch" checked="{{shopObj.shop_or}}" bind:tap="checkStatue" /></view>
+    </view>
+</view>
+<modal hidden="{{modal_statue}}" title="编辑内容" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type="text" placeholder="修改内容" bind:input="changeConent"/>
+</modal>

@@ -1,0 +1,32 @@
+page {
+  background-color: #f7f7f7;
+}
+.all_wrap .list_wrap {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .list_wrap .list {
+  padding: 12rpx;
+}
+.all_wrap .list_wrap .list .content {
+  float: right;
+  color: #afaeae;
+}
+.all_wrap .list_wrap_2 {
+  margin-top: 24rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .list_wrap_2 .list {
+  padding: 12rpx;
+}
+.all_wrap .list_wrap_2 .list .content {
+  float: right;
+  color: #afaeae;
+}
+.all_wrap .list_wrap_2 .list .switch {
+  zoom: 0.7;
+  float: right;
+}

@@ -1,0 +1,110 @@
+page {
+  background-color: whitesmoke;
+}
+.all_wrap .add {
+  text-align: center;
+}
+.all_wrap .title {
+  padding: 12rpx;
+}
+.all_wrap #title {
+  border: 1rpx solid #707070;
+  padding: 0;
+  width: 170rpx;
+  text-align: center;
+  margin-top: 12rpx;
+  margin-left: 12rpx;
+  border-radius: 24rpx;
+}
+.all_wrap .navigator {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+.all_wrap .navigator .item {
+  flex: 1;
+}
+.all_wrap .navigator .item image {
+  width: 100%;
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 50%;
+  text-align: center;
+}
+.all_wrap .navigator .item .title {
+  text-align: center;
+  font-weight: 600;
+}
+.all_wrap .tip_wrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  margin-top: 48rpx;
+  margin-right: 12rpx;
+  margin-left: 12rpx;
+  border: 1rpx solid #c0c0c0;
+  border-radius: 24rpx;
+}
+.all_wrap .tip_wrap .title {
+  border-bottom: 1rpx solid #c0c0c0;
+}
+.all_wrap .hotcontent_wrap {
+  margin-left: 18rpx;
+  margin-right: 18rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 12rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+.all_wrap .hotcontent_wrap .user_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx;
+}
+.all_wrap .hotcontent_wrap .user_content image {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+.all_wrap .hotcontent_wrap .user_content .user_name {
+  font-size: 33rpx;
+  margin-top: 12rpx;
+}
+.all_wrap .hotcontent_wrap .user_content .user_name .type {
+  width: 64rpx;
+  font-size: 32rpx;
+  background-color: greenyellow;
+  padding: 4rpx;
+  margin-left: 12rpx;
+  border-radius: 12rpx;
+  color: white;
+}
+.all_wrap .hotcontent_wrap .content_wrap {
+  flex: 3;
+}
+.all_wrap .hotcontent_wrap .content_wrap .content {
+  padding-top: 24rpx;
+  max-width: 360rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.all_wrap .hotcontent_wrap .content_wrap image {
+  height: 180rpx;
+  width: 180rpx;
+  padding-top: 24rpx;
+}
+.all_wrap .hotcontent_wrap .tip {
+  width: 100%;
+  text-align: center;
+}
+.all_wrap .hot_tip image {
+  height: 80rpx;
+  width: 80rpx;
+  margin-top: 24rpx;
+  margin-right: 24rpx;
+}

@@ -1,0 +1,32 @@
+.all_wrap .title {
+  text-align: center;
+}
+.all_wrap .list_wrap {
+  border-bottom: 1rpx solid #b9b8b8;
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx;
+}
+.all_wrap .list_wrap .list {
+  padding: 12rpx;
+}
+.all_wrap .list_wrap .list input {
+  float: right;
+}
+.all_wrap .list_wrap button {
+  margin-top: 24rpx;
+}
+.all_wrap .list_wrap_1 {
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .list_wrap_1 .list_1 {
+  padding: 12rpx;
+}
+.all_wrap .list_wrap_1 .list_1 input {
+  float: right;
+}
+.all_wrap .list_wrap_1 button {
+  margin-top: 24rpx;
+}

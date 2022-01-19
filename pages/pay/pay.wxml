@@ -1,0 +1,20 @@
+<view class="all_wrap">
+    <view class="add_wrap">
+        <view class="user_wrap">
+            <view class="name">姓名：{{userInfoObj.userRealName}}</view>
+            <view class="add">地址：{{userInfoObj.userRealAdd}}</view>
+        </view>
+        <view class="user_phone">电话：{{userInfoObj.userRealPhone}}</view>
+    </view>
+    <view class="tip">
+        支付
+    </view>
+    <view class="pay_wrap">
+        <view class="price">￥{{price}}</view>
+        <button type="primary">付款</button>
+    </view>
+    <view class="tip_wrap">
+        <view class="title">请输入备注信息:</view>
+        <input placeholder="备注" />
+    </view>
+</view>

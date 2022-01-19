@@ -1,0 +1,59 @@
+/* pages/send/send.wxss */
+.all_wrap {
+  padding: 24rpx;
+}
+.all_wrap .content {
+  padding-bottom: 48rpx;
+}
+.all_wrap .swich_wrap {
+  padding: 12rpx;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.all_wrap .swich_wrap .swich_title {
+  padding-right: 12rpx;
+  font-size: 32rpx;
+}
+.all_wrap .swich_wrap .swich {
+  zoom: 0.6;
+}
+.all_wrap .upload {
+  text-align: center;
+  font-size: 240rpx;
+  font-weight: 100;
+  color: #bdbdbd;
+}
+.all_wrap .img {
+  height: 240rpx;
+  width: 240rpx;
+}
+.all_wrap .section_wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 24rpx;
+  font-size: 32rpx;
+  float: right;
+}
+.all_wrap .section_wrap .change .picker {
+  color: #85a1f5;
+}
+.all_wrap .section_wrap .price_wrap {
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: row;
+}
+.all_wrap .section_wrap .price_wrap input {
+  border-bottom: 1rpx solid #eeeded;
+}
+.all_wrap .bt {
+  margin-top: 50%;
+}
+.all_wrap .tip_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.all_wrap .tip_wrap .tip_list {
+  color: red;
+  font-size: 28rpx;
+}

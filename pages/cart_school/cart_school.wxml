@@ -1,0 +1,14 @@
+<view class="all_wrap">
+    <navigator class="item_wrap" wx:for="{{schoolObj}}" bind:tap="gotoDetail" data-item="{{item}}">
+        <view class="content_wrap">
+            <view class="img">
+                <image src="{{item.fileID}}" />
+            </view>
+            <view class="mess_wrap">
+                <view class="name">{{item.title}}</view>
+                <view class="content">{{item.detail}}</view>
+                <view class="price">￥{{item.price}}</view>
+            </view>
+        </view>
+    </navigator>
+</view>
